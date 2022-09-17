@@ -1,4 +1,4 @@
-export tag=v1.0
+export tag=v2.0
 root:
 	export ROOT=github.com/cncamp/golang
 
@@ -13,4 +13,4 @@ release: build
 
 push: release
 	echo "pushing csmiao/httpserver"
-	docker push csmiao/httpserver:v1.0
+	docker push csmiao/httpserver:${tag}
