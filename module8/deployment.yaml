@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: httpserver
+  name: httpserver
+spec:
+  progressDeadlineSeconds: 300
+  replicas: 2
+  selector:
+    matchLabels:
+      app: httpserver
+  strategy:
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 1
+    type: RollingUpdate
+  minReadySeconds: 15
+  template:
+    metadata:
+      labels:
+        app: httpserver
+    spec:
+      containers:
+      - name: httpserver 
+        image: csmiao/httpserver:v2.0
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: httpport
+          valueFrom:
+            configMapKeyRef:
+              name: httpserver-env
+              key: httpport
+        - name: loglevel
+          valueFrom:
+            configMapKeyRef:
+              name: httpserver-env
+              key: loglevel
+        resources:
+          limits:
+            cpu: 200m
+            memory: 100Mi
+          requests:
+            cpu: 20m
+            memory: 20Mi
+        # 探活
+        livenessProbe:
+          failureThreshold: 3
+          httpGet:
+            ### this probe will fail with 404 error code
+            ### only httpcode between 200-400 is retreated as success
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 15
+          periodSeconds: 5
+          successThreshold: 1
+          timeoutSeconds: 1
+        # 优雅启动
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            ### this probe will fail with 404 error code
+            ### only httpcode between 200-400 is retreated as success
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          successThreshold: 1
+          timeoutSeconds: 1
