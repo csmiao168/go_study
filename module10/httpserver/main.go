@@ -3,16 +3,20 @@ package main
 import (
 	"context"
 	"fmt"
+	"go_study/module10/httpserver/metrics"
 	"io"
+	"math/rand"
 	"net"
 	"net/http"
 	"os"
 	"os/signal"
 	"strings"
 	"syscall"
+	"time"
 
 	_ "net/http/pprof"
 
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	log "github.com/sirupsen/logrus"
 	"github.com/thinkeridea/go-extend/exnet"
 )
@@ -21,6 +25,9 @@ func main() {
 
 	//flag.Set("v", "4")
 	log.Info("Starting http server...")
+
+	//模块10
+	metrics.Register()
 
 	var logLevel string
 	var port string
@@ -61,6 +68,8 @@ func main() {
 	mux.HandleFunc("/", rootHandler)
 	//模块3任务4:healthz时，返回200
 	mux.HandleFunc("/healthz", healthz)
+	//模块10任务
+	mux.Handle("/metrics", promhttp.Handler())
 	server := &http.Server{
 		Addr:    port,
 		Handler: mux,
@@ -91,7 +100,7 @@ func setLogLevel(logLevel string) {
 
 func healthz(w http.ResponseWriter, r *http.Request) {
 
-	fmt.Println("entering healthz handler")
+	log.Info("entering healthz handler")
 	//模块3任务1：request中带的header写入response header
 	for k, v := range r.Header {
 		w.Header().Set(k, strings.Join(v, ""))
@@ -111,9 +120,22 @@ func healthz(w http.ResponseWriter, r *http.Request) {
 	log.Info("healthz handler - 客户端IP：", ip, ",HTTP返回码:200")
 }
 
+func randInt(min int, max int) int {
+	rand.Seed(time.Now().UTC().UnixNano())
+	return min + rand.Intn(max-min)
+}
+
 func rootHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("entering root handler")
+	log.Info("entering root handler")
+	//模块10
+	timer := metrics.NewTimer()
+	defer timer.ObserveTotal()
+
 	user := r.URL.Query().Get("user")
+	//模块10
+	delay := randInt(10, 2000)
+	time.Sleep(time.Millisecond * time.Duration(delay))
+
 	if user != "" {
 		io.WriteString(w, fmt.Sprintf("hello [%s]\n", user))
 	} else {
@@ -123,6 +145,9 @@ func rootHandler(w http.ResponseWriter, r *http.Request) {
 	for k, v := range r.Header {
 		io.WriteString(w, fmt.Sprintf("%s=%s\n", k, v))
 	}
+
+	//模块10
+	log.Info("Respond in ",delay, " ms")
 }
 
 func RemoteIp(req *http.Request) string {
