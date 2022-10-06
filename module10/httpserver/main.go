@@ -26,7 +26,7 @@ func main() {
 	//flag.Set("v", "4")
 	log.Info("Starting http server...")
 
-	//模块10
+	//模块10任务2：添加Metric
 	metrics.Register()
 
 	var logLevel string
@@ -68,7 +68,7 @@ func main() {
 	mux.HandleFunc("/", rootHandler)
 	//模块3任务4:healthz时，返回200
 	mux.HandleFunc("/healthz", healthz)
-	//模块10任务
+	//模块10任务2：添加延时 Metric
 	mux.Handle("/metrics", promhttp.Handler())
 	server := &http.Server{
 		Addr:    port,
@@ -127,12 +127,12 @@ func randInt(min int, max int) int {
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
 	log.Info("entering root handler")
-	//模块10
+	//模块10任务2：添加延时 Metric
 	timer := metrics.NewTimer()
 	defer timer.ObserveTotal()
 
 	user := r.URL.Query().Get("user")
-	//模块10
+	//模块10任务1：添加 0-2 秒的随机延时
 	delay := randInt(10, 2000)
 	time.Sleep(time.Millisecond * time.Duration(delay))
 
@@ -146,8 +146,8 @@ func rootHandler(w http.ResponseWriter, r *http.Request) {
 		io.WriteString(w, fmt.Sprintf("%s=%s\n", k, v))
 	}
 
-	//模块10
-	log.Info("Respond in ",delay, " ms")
+	//模块10任务1：延时时间输出log
+	log.Info("Respond in ", delay, " ms")
 }
 
 func RemoteIp(req *http.Request) string {

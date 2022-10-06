@@ -28,7 +28,7 @@ spec:
       - name: httpserver 
         image: csmiao/httpserver:v1.0-metrics
         imagePullPolicy: IfNotPresent
-	ports:
+        ports:
         - containerPort: 8080
         env:
         - name: httpport
