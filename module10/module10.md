@@ -92,5 +92,5 @@
 
 5. （可选）创建一个 Grafana Dashboard 展现延时分配情况。
 
-   ![image-20221006174736814](/Users/dev_tyj/Library/Application Support/typora-user-images/image-20221006174736814.png)
+   ![image-20221006174736814](./ResponseLatency.png)
 
