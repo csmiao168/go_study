@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-04T10:59:16.765Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="d2SMkSaaB0QC1Gvg5siO" version="24.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-04T11:21:30.005Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="2pWE6nUIEScXIkwfl5VV" version="24.2.2" type="github">
   <diagram name="第 1 页" id="H5Td6hfvK_dSOBT4_KqR">
     <mxGraphModel dx="1026" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,8 +13,8 @@
         <mxCell id="0VPpqt3ser_8MPo7c0mN-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="30" y="650" width="530" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="0VPpqt3ser_8MPo7c0mN-1" value="&lt;div&gt;API-8080&lt;/div&gt;10.175.22.222&lt;div&gt;10.175.22.48&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="235.5" y="710" width="120" height="60" as="geometry" />
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-1" value="&lt;div&gt;docker应用&lt;/div&gt;10.175.22.222&lt;div&gt;10.175.22.48&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="248" y="715" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="0VPpqt3ser_8MPo7c0mN-3" value="工行-生产内网" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="29" y="804" width="100" height="30" as="geometry" />
@@ -26,7 +26,7 @@
           <mxGeometry x="570" y="650" width="240" height="500" as="geometry" />
         </mxCell>
         <mxCell id="0VPpqt3ser_8MPo7c0mN-7" value="工行-办公区" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="590" y="650" width="80" height="30" as="geometry" />
+          <mxGeometry x="571" y="650" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0VPpqt3ser_8MPo7c0mN-8" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Redis&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;port：6379&lt;/span&gt;&lt;/div&gt;&lt;div&gt;nodeport:30092&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="870" width="120" height="60" as="geometry" />
@@ -88,8 +88,38 @@
         <mxCell id="0VPpqt3ser_8MPo7c0mN-42" value="防火墙" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="10" y="585" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0VPpqt3ser_8MPo7c0mN-43" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.proxy_server;" vertex="1" parent="1">
-          <mxGeometry x="159" y="620" width="76.5" height="90" as="geometry" />
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-44" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.reverse_proxy;" vertex="1" parent="1">
+          <mxGeometry x="163" y="627" width="41" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-45" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.reverse_proxy;" vertex="1" parent="1">
+          <mxGeometry x="440.5" y="630" width="41" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-46" value="正向代理" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="690" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-47" value="https://corp.dccnet.com.cn" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="419" y="679" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-50" value="8080" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF6666;" vertex="1" parent="1">
+          <mxGeometry x="270" y="690" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-52" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/API_Management_Services.svg;" vertex="1" parent="1">
+          <mxGeometry x="130" y="427" width="65" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-55" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.mobile;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="581.75" y="427" width="35" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-57" value="平安云服务" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="482" width="81" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-58" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/social-media-2346/512/we_chat-01-128.png" vertex="1" parent="1">
+          <mxGeometry x="331" y="393" width="109" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-60" value="微信相关服务" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="346" y="487" width="81" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-61" value="APP" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="482" width="81" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
