@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-05T03:05:23.509Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="pZWwE2WEE8JT2ycxFkwk" version="24.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-05T06:04:59.014Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="sZNFLFxzyTlPTAzdij8j" version="24.2.2" type="github">
   <diagram name="第 1 页" id="H5Td6hfvK_dSOBT4_KqR">
-    <mxGraphModel dx="1026" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1115" dy="725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,10 +17,10 @@
           <mxGeometry x="29" y="773" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0VPpqt3ser_8MPo7c0mN-5" value="工行-生产隔离区" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="30" y="598" width="100" height="30" as="geometry" />
+          <mxGeometry x="30" y="607" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0VPpqt3ser_8MPo7c0mN-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="772" width="240" height="388" as="geometry" />
+          <mxGeometry x="570" y="772" width="240" height="378" as="geometry" />
         </mxCell>
         <mxCell id="0VPpqt3ser_8MPo7c0mN-7" value="工行-办公区" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="570" y="776" width="80" height="30" as="geometry" />
@@ -286,13 +286,13 @@
         <mxCell id="0VPpqt3ser_8MPo7c0mN-121" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="0VPpqt3ser_8MPo7c0mN-14" target="0VPpqt3ser_8MPo7c0mN-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0VPpqt3ser_8MPo7c0mN-127" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1">
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-127" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="299" y="976" as="sourcePoint" />
             <mxPoint x="299" y="1002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0VPpqt3ser_8MPo7c0mN-131" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.929;entryY=0.967;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.012;exitY=0.117;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="0VPpqt3ser_8MPo7c0mN-15" target="0VPpqt3ser_8MPo7c0mN-11">
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-131" value="" style="endArrow=classic;startArrow=none;html=1;rounded=0;entryX=0.929;entryY=0.967;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.012;exitY=0.117;exitDx=0;exitDy=0;exitPerimeter=0;startFill=0;" edge="1" parent="1" source="0VPpqt3ser_8MPo7c0mN-15" target="0VPpqt3ser_8MPo7c0mN-11">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="440" y="1050" as="sourcePoint" />
             <mxPoint x="490" y="1000" as="targetPoint" />
@@ -304,13 +304,13 @@
             <mxPoint x="410" y="980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0VPpqt3ser_8MPo7c0mN-133" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0VPpqt3ser_8MPo7c0mN-12" target="0VPpqt3ser_8MPo7c0mN-15">
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-133" value="" style="endArrow=none;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" source="0VPpqt3ser_8MPo7c0mN-12" target="0VPpqt3ser_8MPo7c0mN-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="440" y="1050" as="sourcePoint" />
             <mxPoint x="490" y="1000" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0VPpqt3ser_8MPo7c0mN-134" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.429;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0VPpqt3ser_8MPo7c0mN-13" target="0VPpqt3ser_8MPo7c0mN-15">
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-134" value="" style="endArrow=none;startArrow=classic;html=1;rounded=0;entryX=0.429;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;" edge="1" parent="1" source="0VPpqt3ser_8MPo7c0mN-13" target="0VPpqt3ser_8MPo7c0mN-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="440" y="1050" as="sourcePoint" />
             <mxPoint x="490" y="1000" as="targetPoint" />
@@ -318,6 +318,9 @@
         </mxCell>
         <mxCell id="0VPpqt3ser_8MPo7c0mN-135" value="K8s的master节点IP" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="261" y="766" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-136" value="连线颜色的说明：&lt;div&gt;1.红色表示来自互联挖的访问。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;2.绿色表示访问互联网。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;3.蓝色表示坐席在办公区的访问。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;4.黑色表示k8s集群内的调用。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF6666;" vertex="1" parent="1">
+          <mxGeometry x="640" y="396" width="181" height="74" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
