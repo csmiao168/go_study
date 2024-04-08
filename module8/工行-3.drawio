@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-07T09:19:52.538Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="smX_LMIN8XSHprSkymik" version="24.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-08T05:30:21.622Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="W9PLmplYmWpWcbKiE74W" version="24.2.2" type="github">
   <diagram name="第 1 页" id="H5Td6hfvK_dSOBT4_KqR">
-    <mxGraphModel dx="1026" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1115" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -187,7 +187,7 @@
         <mxCell id="0VPpqt3ser_8MPo7c0mN-45" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.reverse_proxy;" parent="0VPpqt3ser_8MPo7c0mN-106" vertex="1">
           <mxGeometry x="60.5" width="41" height="53" as="geometry" />
         </mxCell>
-        <mxCell id="0VPpqt3ser_8MPo7c0mN-47" value="工行代理" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="0VPpqt3ser_8MPo7c0mN-106" vertex="1">
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-47" value="总行域名代理" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="0VPpqt3ser_8MPo7c0mN-106" vertex="1">
           <mxGeometry y="50" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0VPpqt3ser_8MPo7c0mN-107" value="" style="endArrow=classic;startArrow=none;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;entryX=0;entryY=1;entryDx=0;entryDy=0;startFill=0;exitX=0.654;exitY=0.414;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="0VPpqt3ser_8MPo7c0mN-4" edge="1">
@@ -208,7 +208,7 @@
             <mxPoint x="369" y="510" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0VPpqt3ser_8MPo7c0mN-112" value="" style="endArrow=none;startArrow=classic;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;endFill=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" edge="1" source="0VPpqt3ser_8MPo7c0mN-34">
+        <mxCell id="0VPpqt3ser_8MPo7c0mN-112" value="" style="endArrow=none;startArrow=classic;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;endFill=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="0VPpqt3ser_8MPo7c0mN-34" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="325" y="821" as="sourcePoint" />
             <mxPoint x="567" y="821" as="targetPoint" />
@@ -283,25 +283,22 @@
             <mxPoint x="490" y="959" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0VPpqt3ser_8MPo7c0mN-135" value="K8s的master节点IP" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="85" y="657" width="120" height="50" as="geometry" />
-        </mxCell>
         <mxCell id="0VPpqt3ser_8MPo7c0mN-136" value="连线颜色的说明：&lt;div&gt;1.红色表示来自互联挖的访问。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;2.绿色表示访问互联网。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;3.蓝色表示坐席在办公区的访问。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;4.黑色表示k8s集群内的调用。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF6666;" parent="1" vertex="1">
           <mxGeometry x="640" y="396" width="181" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="WUPsCM75Mi7F_lNf_f48-1" value="" style="endArrow=none;startArrow=classic;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;endFill=0;" parent="1" edge="1">
+        <mxCell id="WUPsCM75Mi7F_lNf_f48-1" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;endFill=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="370" y="740" as="sourcePoint" />
             <mxPoint x="410" y="870" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WUPsCM75Mi7F_lNf_f48-2" value="" style="endArrow=none;startArrow=classic;html=1;rounded=0;fillColor=#008a00;strokeColor=#005700;endFill=0;exitX=0.205;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" edge="1" target="0VPpqt3ser_8MPo7c0mN-34">
+        <mxCell id="WUPsCM75Mi7F_lNf_f48-2" value="" style="endArrow=none;startArrow=classic;html=1;rounded=0;fillColor=#008a00;strokeColor=#005700;endFill=0;exitX=0.205;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="0VPpqt3ser_8MPo7c0mN-34" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390.0000000000001" y="743" as="sourcePoint" />
             <mxPoint x="460" y="879" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ukt-0VW7PRhgNPQQfDPv-1" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;strokeColor=#3333FF;endSize=6;startSize=6;jumpSize=6;" edge="1" parent="1">
+        <mxCell id="ukt-0VW7PRhgNPQQfDPv-1" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;strokeColor=#3333FF;endSize=6;startSize=6;jumpSize=6;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="487" y="861" as="sourcePoint" />
             <mxPoint x="565" y="861" as="targetPoint" />
