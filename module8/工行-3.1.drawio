@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-09T03:19:43.099Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="MEX02OMhUZVJgItwwNBV" version="24.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-09T05:24:30.900Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="qnla7z-HBnkg7Eo2rU_6" version="24.2.2" type="github">
   <diagram name="第 1 页" id="H5Td6hfvK_dSOBT4_KqR">
     <mxGraphModel dx="1283" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -286,7 +286,7 @@
         <mxCell id="0VPpqt3ser_8MPo7c0mN-136" value="连线颜色的说明：&lt;div&gt;1.红色表示来自互联挖的访问。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;2.绿色表示访问互联网。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;3.蓝色表示坐席在办公区的访问。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;4.黑色表示集群内的调用。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF6666;" parent="1" vertex="1">
           <mxGeometry x="640" y="205" width="181" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="WUPsCM75Mi7F_lNf_f48-1" value="" style="endArrow=classic;startArrow=none;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;endFill=1;startFill=0;" parent="1" edge="1">
+        <mxCell id="WUPsCM75Mi7F_lNf_f48-1" value="" style="endArrow=none;startArrow=classic;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;endFill=0;startFill=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="406" y="549" as="sourcePoint" />
             <mxPoint x="440" y="649" as="targetPoint" />
@@ -390,6 +390,12 @@
         </mxCell>
         <mxCell id="vYAwJx9EKdvuZ_oxdOfk-16" value="yqw_scrm&lt;div&gt;yqw_comm&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="610" y="429" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vYAwJx9EKdvuZ_oxdOfk-17" value="" style="endArrow=classic;startArrow=none;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;startFill=0;" edge="1" parent="1" target="0VPpqt3ser_8MPo7c0mN-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="471" as="sourcePoint" />
+            <mxPoint x="539.7831325301206" y="500" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
